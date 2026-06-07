@@ -41,6 +41,49 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <style>
+      /* ============================================================
+         Modernization layer — CV-teal accent + auto dark mode
+         (loaded last so it overrides the legacy theme stylesheets)
+         ============================================================ */
+      :root{
+        --accent:#3498db;                       /* original site blue — links only */
+        --accent-rule:#e5e5e5;                  /* subtle grey heading rule */
+        --bg:#ffffff;
+        --text:#2d2d2d;                         /* original body text */
+        --heading:#222222;                      /* black headings/name */
+      }
+
+      body{
+        background:var(--bg);
+        color:var(--text);
+        font-size:15px;
+        line-height:1.6;
+      }
+
+      a{ color:var(--accent); }
+      a:hover{ text-decoration:underline; }
+
+      /* Name */
+      h1{ color:var(--heading); letter-spacing:-0.5px; }
+
+      /* Section headings — uppercase black with hairline rule, mirroring the CV */
+      section div[align="left"] h3{
+        color:var(--heading);
+        font-weight:700;
+        text-transform:uppercase;
+        letter-spacing:0.06em;
+        font-size:15px;
+        padding-bottom:6px;
+        margin-bottom:16px;
+        border-bottom:1.5px solid var(--accent-rule);
+      }
+
+      strong, b{ color:var(--heading); }
+      /* keep bold text inside links the link (teal) color */
+      a b, a strong{ color:inherit; }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -64,7 +107,7 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
 
 
-  <p>Welcome! I am a PhD candidate in Sociology at Harvard University, where my research examines the formal and informal linkages between higher education and the labor market, with a focus on how these connections shape inequalities among college graduates. My dissertation studies how colleges channel students into firms and jobs, how employers evaluate and recruit talent, and how the fit between graduates’ skills and workplace tasks affects earnings. This work combines computational methods with administrative and proprietary data, often through collaborations with state agencies and firms. In related work, I develop methods for causal inference to examine the mechanisms through which education shapes economic inequality.</p>
+  <p style="text-align:justify;">Welcome! I am a PhD candidate in Sociology at Harvard University, where my research examines the formal and informal linkages between higher education and the labor market, with a focus on how these connections shape inequalities among college graduates. My projects have studied how colleges channel students into firms and jobs, how employers evaluate and recruit talent, and how the fit between graduates’ skills and workplace tasks affects earnings. This work combines computational methods with administrative and proprietary data, often through collaborations with state agencies and firms. In related work, I develop methods for causal inference to examine the mechanisms through which education shapes economic inequality.</p>
 
 <p> 
 	
@@ -80,8 +123,7 @@
 
 	  
 	  <li> 
- Opacic, Aleksei, Lai Wei and Xiang Zhou. <b><a href="https://academic.oup.com/jrsssa/advance-article/doi/10.1093/jrsssa/qnaf008/8042221">Disparity Analysis: A Tale of Two Approaches. </b>
-	</a> <i>Journal of the Royal Statistical Society, Series A: Statistics in Society</i>, 00, 1–29
+ <b><a href="https://academic.oup.com/jrsssa/advance-article/doi/10.1093/jrsssa/qnaf008/8042221">Disparity Analysis: A Tale of Two Approaches.</a></b> (with Lai Wei and Xiang Zhou) <i>Journal of the Royal Statistical Society, Series A: Statistics in Society</i>, 00, 1–29
 		   <i> <a href="#" onclick="toggle_visibility('disparity');">[Abstract]</a></i>
 <div id="disparity" style="display:none;"><br> To understand the patterns and trends of various forms of inequality, quantitative social science research has typically relied on statistical models linking the conditional mean of an outcome of interest to a range of explanatory factors. A prime example of this approach is the widely used Kitagawa-Oaxaca-Blinder (KOB) method. By fitting two linear models separately for an advantaged group and a disadvantaged group, the KOB method decomposes the between-group outcome disparity into two parts, a part explained by group differences in a set of background characteristics and an unexplained part often dubbed “residual inequality.” In this paper, we explicate and contrast two distinct approaches to studying group disparities, which we term the descriptive approach, as epitomized by the KOB method and its variants, and the prescriptive approach, which focuses on how a disparity of interest would change under a hypothetical in- tervention to one or more manipulable treatments. For the descriptive approach, we propose a generalized KOB decomposition 
 	that considers multiple (sets of) explanatory variables sequen- tially. For the prescriptive approach, we introduce a variety of stylized interventions, such as lottery-type and affirmative-action-type 
@@ -93,23 +135,13 @@
 </li>   
 
 	  <li>
-Bloome, Deirdre, and Aleksei Opacic. <b><a href="https://www.pnas.org/doi/10.1073/pnas.2321418121">Absolute Income Mobility Obscures Marginalized Children’s Disadvantages</a></b>. 
+<b><a href="https://www.pnas.org/doi/10.1073/pnas.2321418121">Absolute Income Mobility Obscures Marginalized Children’s Disadvantages</a></b> (with Deirdre Bloome).
  <i>Proceedings of the National Academy of Sciences</i>, 121 (25).
 
 <i><a href="#" onclick="toggle_visibility('pnas');">[Abstract]</a></i>
 <div id="pnas" style="display:none;"><br> Intergenerational mobility captures the distance between the socioeconomic positions of parents versus their adult children. Researchers measure this distance in absolute and relative units, such as absolute dollars and relative ranks. Absolute and relative mobility often diverge. For example, absolute mobility can rise while relative mobility declines. How should scholars and policymakers understand this divergence? We conclude that they should understand it as follows: absolute mobility is less reflective than relative mobility of marginalized children's socioeconomic disadvantages. We base this conclusion on analyses of survey, administrative, and simulated data on income mobility in the contemporary United States. We analyze multiple points of difference in mobility, which facilitates the recognition of several asymmetries. First, high-income children's experiences weigh more heavily in absolute-mobility trends than low-income children's experiences, particularly when economic growth is positive. Second, this asymmetry is more characteristic of absolute- than relative-mobility trends. Third, absolute-mobility differences across demographic groups are more prone than relative-mobility differences to obscure marginalized groups' socioeconomic disadvantages. These asymmetries have policy implications: We caution that focusing on absolute mobility as a policy target can divert attention away from society's most disadvantaged children.
 	&nbsp;
-	</li> 
-	  
-<li>
-Evans, Geoffrey, and Aleksei Opacic. <b><a href="https://www.researchgate.net/publication/351191141_How_Social_Class_Influences_Political_Choices">How Social Class Influences Political Choices</a></b>
- <i>Cambridge Handbook of Political Psychology</i>,  eds. Danny Osborne and Chris G. Sibley. Cambridge University Press. pp. 382-398.
-
-<i><a href="#" onclick="toggle_visibility('handbook');">[Abstract]</a></i>
-<div id="handbook" style="display:none;"><br> This chapter examines research from political science, sociology and psychology to 
-	stand how and why class position is associated with differences in political attitudes and choices. After reviewing influential definitions of social class, we examine research on explanations of class differences in political behavior. These include class differences in identity, values and self-interest, authoritarianism and control. We then review explanations for changes in political choices between classes over time, focusing on supply-side versus demand-side interpretations of declining levels of class voting in Western democracies, and emphasizing the effects of party programmatic convergence on the political relevance of class-based values. Finally, we assess recent interpretations of the rise of working class support for the radical right political support, pointing to the limitations of status threat accounts, and noting that such political choices are more powerfully associated with educational attainment than with class position. We consider whether this suggests a reconfiguration of electoral behavior from a class-based to an educational divide.
-	&nbsp;
-	</li> 
+	</li>
 
  </ol>
    </p>
@@ -118,31 +150,39 @@ Evans, Geoffrey, and Aleksei Opacic. <b><a href="https://www.researchgate.net/pu
 	    &nbsp;
   <div align="left"><h3>Working papers</h3></div>
   <p>
-  <ol  start="4">
+  <ol  start="3">
   
 
 <li>
-Opacic, Aleksei.<b><a href="https://osf.io/preprints/socarxiv/swtyn_v1"> From Flagship to Firm:  Gatekeeping, Employer Sorting, and the Returns to College.</a></b>  
-			</a> Under Review.</i>
+The Skill-Task Gap: Skill Transferability and Labor Market Alignment
+<ul style="color:gray; font-size:0.85em; margin:2px 0 2px 1.5em; padding-left:1em;">
+<li>Geoffrey Tootell Outstanding Dissertation-in-Progress Award, Mathematical Sociology Section, American Sociological Association</li>
+</ul>
+</li>
+
+<li>
+<b><a href="https://osf.io/preprints/socarxiv/swtyn_v1">From Flagship to Firm: Gatekeeping, Employer Sorting, and the Returns to College.</a></b>
 	  <i><a href="#" onclick="toggle_visibility('firms');">[Abstract]</a></i>
-<div id="firms" style="display:none;"><br> Firms increasingly drive college graduates' labor market earnings, yet the vast literature on the value-added of college has largely overlooked their role. Drawing on human capital theory and institutional theories of credentialism, closure, and organizational matching, I argue that college-to-workplace pipelines are a critical driver of college value-added. To test this, I assemble a novel US employer-employee matched dataset merged with postsecondary and high school academic records. Firm placement explains much of the variation in earnings premiums between colleges. Absent firm sorting, the range of counterfactual earnings differences across colleges would fall by 56%, and over half of the earnings advantage to attending the state flagship comes from access to higher-paying employers. These sorting effects extend broadly across the distribution of high-wage firms, and not merely a handful of elite employers. Crucially, sorting effects do not simply reflect skill-based advantages, implying that college quality derives as much from institutional linkages to the labor market as from human capital development. Policies aimed at broadening recruitment pipelines, rather than solely improving instructional inputs, are therefore essential to reducing inequalities in the economic returns to higher education.
+<div id="firms" style="display:none;"><br> Firms increasingly drive college graduates' labor market earnings, yet the vast literature on the value-added of college has largely overlooked their role. Drawing on human capital theory and institutional theories of credentialism, closure, and organizational matching, I argue that college-to-workplace pipelines are a critical driver of college value-added. To test this, I assemble a novel US employer-employee matched dataset merged with postsecondary and high school academic records. Firm placement explains much of the variation in earnings premiums between colleges. Absent firm sorting, the range of counterfactual earnings differences across colleges would fall by 56%, and over half of the earnings advantage to attending the state flagship comes from access to higher-paying employers. These sorting effects extend broadly across the distribution of high-wage firms, and not merely a handful of elite employers. Crucially, sorting effects do not simply reflect skill-based advantages, implying that college quality derives as much from institutional linkages to the labor market as from human capital development. Policies aimed at broadening recruitment pipelines, rather than solely improving instructional inputs, are therefore essential to reducing inequalities in the economic returns to higher education. </div>
 &nbsp;
 
-</li> 
-	  
+</li>
+
 <li>
-Opacic, Aleksei.<b><a href="https://arxiv.org/abs/2508.13366"> Monotonic Path-Specific Effects: Application to Estimating Educational Returns.</a></b>  
-			</a> Revise & Resubmit at <i>Annals of Applied Statistics</i>
+<b><a href="https://arxiv.org/abs/2508.13366">Monotonic Path-Specific Effects: Application to Estimating Educational Returns.</a></b>
 	  <i><a href="#" onclick="toggle_visibility('pse');">[Abstract]</a></i>
-<div id="pse" style="display:none;"><br> Conventional research on educational effects typically either employs a “years of schooling” measure of education, or dichotomizes attainment as a point-in-time treatment. Nevertheless, such a conceptualization of education is at odds with the sequential process by which individuals make educational transitions. In this paper, I propose a causal mediation framework for the study of educational effects on outcomes such as earnings. The framework considers the effect of a given educational transition as operating indirectly, via progression through subsequent transitions, as well as directly, net of these transitions. I demonstrate that the average treatment effect (ATE) of education can be additively decomposed into mutually exclusive components that capture these direct and indirect effects. The decomposition has several special properties which distinguish it from conventional mediation decompositions of the ATE, properties which facilitate less restrictive identification assumptions as well as identification of all causal paths in the decomposition. An analysis of the returns to high school completion in the NLSY97 cohort suggests that the payoff to a high school degree stems overwhelmingly from its direct labor market returns. Mediation via college attendance, completion and graduate school attendance is small because of individuals' low counterfactual progression rates through these subsequent transitions.
-&nbsp;
-
-</li> 
+<div id="pse" style="display:none;"><br> Conventional research on educational effects typically either employs a “years of schooling” measure of education, or dichotomizes attainment as a point-in-time treatment. Nevertheless, such a conceptualization of education is at odds with the sequential process by which individuals make educational transitions. In this paper, I propose a causal mediation framework for the study of educational effects on outcomes such as earnings. The framework considers the effect of a given educational transition as operating indirectly, via progression through subsequent transitions, as well as directly, net of these transitions. I demonstrate that the average treatment effect (ATE) of education can be additively decomposed into mutually exclusive components that capture these direct and indirect effects. The decomposition has several special properties which distinguish it from conventional mediation decompositions of the ATE, properties which facilitate less restrictive identification assumptions as well as identification of all causal paths in the decomposition. An analysis of the returns to high school completion in the NLSY97 cohort suggests that the payoff to a high school degree stems overwhelmingly from its direct labor market returns. Mediation via college attendance, completion and graduate school attendance is small because of individuals' low counterfactual progression rates through these subsequent transitions. </div>
+Revise & Resubmit (2nd) at <i>Annals of Applied Statistics</i>
+<ul style="color:gray; font-size:0.85em; margin:2px 0 2px 1.5em; padding-left:1em;">
+<li>Clifford C. Clogg Graduate Student Paper Award, Methodology Section, American Sociological Association</li>
+<li>Outstanding Graduate Student Paper Award, Mathematical Sociology Section, American Sociological Association</li>
+</ul>
+</li>
 
 
 <li>
-Zhou, Xiang, and Aleksei Opacic. <b><a href="https://arxiv.org/abs/2206.10717">Marginal Interventional Effects.</a></b>
-		</a> Reject & Resubmit at <i>Statistical Science</i>
+<b><a href="https://arxiv.org/abs/2206.10717">Marginal Interventional Effects.</a></b> (with Xiang Zhou)
+Reject & Resubmit at <i>Statistical Science</i>
 <i><a href="#" onclick="toggle_visibility('mie');">[Abstract]</a></i>
 	
 <div id="mie" style="display:none;"><br> Conventional causal estimands, such as the average treatment effect (ATE), reflect how the mean outcome in a population or subpopulation would change if all units received treatment versus control. Real-world policy changes, however, are often incremental, changing the treatment status for only a small segment of the population who are at or near “the margin of participation.” To capture this notion, two parallel lines of inquiry have developed in economics and in statistics and epidemiology that define, identify, and estimate what we call interventional effects. In this article, we bridge these two strands of literature by defining interventional effect (IE) as the per capita effect of a treatment intervention on an outcome of interest, and marginal interventional effect (MIE) as its limit when the size of the intervention approaches zero. The IE and MIE can be viewed as the unconditional counterparts of the policy-relevant treatment effect (PRTE) and marginal PRTE (MPRTE) proposed in the economics literature. However, different from PRTE and MPRTE, IE and MIE are defined without reference to a latent index model, and, as we show, can be identified either under unconfoundedness or through the use of instrumental variables. For both scenarios, we show that MIEs are typically identified without the strong positivity assumption required of the ATE, highlight several “stylized interventions” that may be of particular interest in policy analysis, discuss several parametric and semiparametric estimation strategies, and illustrate the proposed methods with an empirical example.
@@ -156,7 +196,7 @@ Zhou, Xiang, and Aleksei Opacic. <b><a href="https://arxiv.org/abs/2206.10717">M
   
 	 
 <li>
-Blackwell, Matthew, Ruofan Ma and Aleksei Opacic. <b><a href="https://arxiv.org/pdf/2407.07072">Assumption Smuggling in Intermediate Outcome Tests of Causal Mechanisms.</a></b>
+<b><a href="https://arxiv.org/pdf/2407.07072">Assumption Smuggling in Intermediate Outcome Tests of Causal Mechanisms.</a></b> (with Matthew Blackwell and Ruofan Ma)
 
 <i><a href="#" onclick="toggle_visibility('smuggling');">[Abstract]</a></i>
 	
@@ -167,25 +207,35 @@ Blackwell, Matthew, Ruofan Ma and Aleksei Opacic. <b><a href="https://arxiv.org/
 	  
 
 
- <li>
-Opacic, Aleksei. <b>Mothers and Mobility: a Re-examination of (Trends in) Intergenerational Mobility in the UK</b>
+	    &nbsp;
+  </ol>
+  <div align="left"><h3>Works in progress</h3></div>
+  <p>
+  <ol start="8">
 
-<i><a href="#" onclick="toggle_visibility('mothers');">[Abstract]</a></i>
-<div id="mothers" style="display:none;"><br> Existing research on intergenerational class mobility typically uses either fathers’ occupation, or the occupation of the ‘class dominant’ parent, as an indicator of ‘class origin’, ignoring heterogeneity in mothers’ and fathers’ class effects on children’s mobility outcomes. Such an elision therefore misses how class reproduction may be shaped by gender in important ways. In this paper, I bring new empirical evidence to the role of mothers in intergenerational mobility in Britain for birth cohorts born in the latter half of the 20th century. I find a significant independent effect of mothers’ class on individuals’ class destinations, and evidence that fathers’ and mothers’ class positions show a stronger effect on same-gender children. Further, mothers and fathers’ class effects do not show similar trends across cohorts; while fathers’ effects have weakened for women but stayed constant for men, mothers’ effects have weakened for both men and women. My findings highlight the importance of taking a gender-sensitive approach to the study of intergenerational mobility patterns and trends. </div>
-&nbsp;
-
-</li> 
-	
-	  
-
-	   <li> Opacic, Aleksei. <b>Does Higher Education Tend Towards Egalitarianism? Evidence from a Population Transitions Model</b>
-				  <i><a href="#" onclick="toggle_visibility('mare');">[Abstract]</a></i>
-<div id="mare" style="display:none;"><br> Many scholars characterize educational attainment as a process that “tends towards egalitarianism” across the life course, based on the highly-replicated finding that family background effects on attainment appear to decline across educational transitions. Yet, such descriptive transitions models typically measure disparities at a given educational level among only the “survivors” of all prior transitions. By ignoring lower-income students’ over-selection into different educational stages, these approaches arguably fail to capture aspects of educational inequality arguably of greatest theoretical and policy interest. By proposing a population transitions model via a potential outcomes framework, I ask how educational inequality would evolve counterfactually over the life course for the entire high school-going population. Drawing on data from the NLSY97, I challenge the notion that individuals are decreasingly constrained by social origin over the educational life course: while only 35% of individuals from the lowest parental income group are expected to graduate college, that same figure is 77% for individuals from the highest parental income group. More straightforwardly, BA inequalities parallel inequalities in high school completion, a constancy across transitions not revealed by descriptive models. To highlight the policy implications of these results, I estimate hypothetical BA attainment inequalities under different degrees of college seat expansion. Contrary to expectations from descriptive transitions models, I show that even extreme higher-educational expansion would do little to reduce BA inequalities overall.
-&nbsp;
+<li>
+Matchmakers and Gatekeepers: AI Recommendations and Racial Disparities in Hiring
 </li>
 
+ </ol>
+  </p>
 
-	  
+	    &nbsp;
+  <div align="left"><h3>Book chapters</h3></div>
+  <p>
+  <ol start="9">
+
+<li>
+<b><a href="https://www.researchgate.net/publication/351191141_How_Social_Class_Influences_Political_Choices">How Social Class Influences Political Choices</a></b> (with Geoffrey Evans). <i>Cambridge Handbook of Political Psychology</i>, eds. Danny Osborne and Chris G. Sibley. Cambridge University Press. pp. 382-398.
+<i><a href="#" onclick="toggle_visibility('handbook');">[Abstract]</a></i>
+<div id="handbook" style="display:none;"><br> This chapter examines research from political science, sociology and psychology to understand how and why class position is associated with differences in political attitudes and choices. After reviewing influential definitions of social class, we examine research on explanations of class differences in political behavior. These include class differences in identity, values and self-interest, authoritarianism and control. We then review explanations for changes in political choices between classes over time, focusing on supply-side versus demand-side interpretations of declining levels of class voting in Western democracies, and emphasizing the effects of party programmatic convergence on the political relevance of class-based values. Finally, we assess recent interpretations of the rise of working class support for the radical right political support, pointing to the limitations of status threat accounts, and noting that such political choices are more powerfully associated with educational attainment than with class position. We consider whether this suggests a reconfiguration of electoral behavior from a class-based to an educational divide. </div>
+&nbsp;
+
+</li>
+
+ </ol>
+  </p>
+
 	    &nbsp;
   <div align="left"><h3>Software</h3></div>
   <p>
