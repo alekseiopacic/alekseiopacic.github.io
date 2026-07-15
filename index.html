@@ -83,6 +83,12 @@
       strong, b{ color:var(--heading); }
       /* keep bold text inside links the link (teal) color */
       a b, a strong{ color:inherit; }
+
+      /* wider content column on large screens (desktop only) */
+      @media screen and (min-width: 1040px){
+        .wrapper{ width:1000px; }
+        section{ width:640px; }
+      }
     </style>
   </head>
   <body>
